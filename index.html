@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>Image Slideshow</title>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body>
+        <h1>Scotland</h1>
+        <div class="slideshow-container">
+            <div class="mySlides">
+                <img src="./images/scotland1.jpg">
+                <div class="text">Caption Text</div>
+              </div>
+            
+              <div class="mySlides">
+                <img src="./images/scotland2.jpg">
+                <div class="text">Caption Two</div>
+              </div>
+            
+              <div class="mySlides">
+                <img src="./images/scotland3.jpeg">
+                <div class="text">Caption Three</div>
+              </div>
+
+              <div class="mySlides">
+                <img src="./images/scotland4.jpeg">
+                <div class="text">Caption Three</div>
+              </div>
+              <!-- <i class="prev bi bi-arrow-left-square" onclick="plusSlides(-1)"></i> -->
+        </div>
+        <a class="prev" id="prev"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-left-square" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm11.5 5.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+          </svg></a>
+        <a class="next" id="next"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-right-square" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm4.5 5.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+          </svg></a>
+        <div style="text-align:center">
+            <span class="dot" id="1"></span>
+            <span class="dot" id="2"></span>
+            <span class="dot" id="3"></span>
+            <span class="dot" id="4"></span>
+        </div>
+        
+        <script src="./app.js"></script>
+    </body>
+</html>
